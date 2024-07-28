@@ -1,0 +1,490 @@
+/*General*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+  color: rgb(65, 64, 64);
+  font-family: poppins;
+  font-family: 'poppins', sans-serif;
+  line-height: 1.7;
+  background-color: rgb(223, 219, 219);
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  /* padding-right: 17px;  */
+  box-sizing: content-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+/*Header*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  margin-top: 0;
+  top: 0;
+  background-color:rgb(185, 182, 182);
+}
+
+.nav{
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  margin: 0;
+}
+
+ul a{
+  padding-right: 13px;
+  padding-left: 30px;
+  /* border-right: 2px solid rgb(134, 130, 130); */
+  margin: 0;
+  color:rgb(2, 77, 175);
+  text-decoration: none;
+  transition: transform 0.4s;
+}
+
+ul a:hover{
+  transform: scale(1.2);
+}
+
+ul a:last-child{
+  border: none;
+}
+
+.logo{
+  width: 100px;
+  margin-right: 80px;
+  padding-top: 5px;
+  border-radius: 3px;
+  padding-left: 10px;
+  transition: transform 0.4s;
+}
+
+.logo:hover{
+  transform: scale(1.1);
+}
+
+
+/*Main*/
+.main{
+  margin-top: 50px;
+}
+
+.image-hover{
+  background-image: url(/images/tanker-1242111_1280.jpg);  
+  height: 400px;
+  width: 100%;
+  background-size:cover;
+  background-position-y: -200px;
+  transition:background-image 0.7s, transform 1s;
+  animation: image 1s ;
+  margin-top:49px;
+}
+
+@keyframes image{
+  0%{transform: translateY(-500px);}
+  100%{transform: translateY(0);}
+}
+
+.image-hover:hover{
+  background-image: url(/images/truck-3910170_1280.jpg);
+  height:400px;
+  width:100%;
+  background-size: cover;  
+  transform: scale(1.03);
+}
+
+
+
+.business-title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size:35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.business-title::after{
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: blue;
+  display: block;
+  animation: bring 0.8s;
+}
+
+@keyframes bring{
+  0%{transform: scale(0);}
+  100%{transform: scale(1);}
+}
+
+.business-header{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.business-header::after{
+  content: "";
+  display: block;
+  background-color: rgb(0, 110, 255);
+  height: 5px;
+  border-radius: 5px;
+  width:100%;
+  margin:10px; 
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+  
+}
+
+.businesses:hover .business-header::after{
+  transform: scale(1);
+  transition: transform 0.4s 0.1s;
+}
+
+
+.business-container{
+  display: flex;
+  transition: all 0.4s;
+  justify-content: space-evenly;
+}
+
+.businesses{
+  margin:20px;
+  padding:20px;
+  background-color: whitesmoke;
+  border-radius: 7px; 
+  border-bottom: 2px solid blue ;
+  transition: 0.6s;
+  max-width: 350px;
+}
+
+.businesses-one{
+  padding-bottom: 100px;
+}
+
+.businesses-two{
+  padding-bottom:50px;
+}
+
+.businesses-three{
+  padding-bottom: 5px;
+}
+
+.about-us-img{
+  height: 500px;
+  padding-left: 0;
+  margin: 0;
+  width: 100%;
+  background-size:cover;
+  background-position-y: -200px;
+  margin-top:49px;  
+}
+
+.about-us-img-div{
+  position: relative;  
+}
+
+.about-div{
+  width: 400px;
+  height: auto;
+  position: absolute;
+  top: 140px;
+  padding: 20px;
+  right:100px;
+  background-color: rgba(255, 255, 255, 0.699);
+  border-radius: 3px;
+  transition: transform 0.6s;
+}
+
+.about-div:hover{
+  transform:scale(1.05);
+}
+
+.business-header{
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.about-head{
+  font-size:27px;
+  font-weight: 750;
+  padding-right: 90px;
+  line-height: 1.4;
+}
+
+.about-body{
+  font-size: 18px;
+}
+
+
+
+
+.our-news-title{
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.our-news-title::after{
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: blue;
+  display: block;
+}
+
+.our-news-header{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(7, 109, 192);
+}
+
+.our-news-header::after{
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: whitesmoke;
+  display: block;
+  border-radius: 5px;
+  transform-origin:center ;
+  transform: scale(0);
+  transition: transform 0.4s;
+  margin-top:10px ;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.our-news-div:hover .our-news-header::after{
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+
+.our-news-container{
+  /* color: white; */
+  display:flex;
+  margin:20px;
+  justify-content: space-between;
+  color: rgb(27, 26, 26);
+}
+
+.our-news-div{
+  background-color:rgba(88, 87, 87, 0.329);
+  margin: 10px;
+  padding: 20px;
+  /* max-width: 300px; */
+  border-radius: 7px;
+  transition: all 0.5s;
+  border-bottom: 2px solid blue ;
+}
+
+
+
+
+.client-feed{
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.client-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding-left:20px;
+  padding-right: 20px;
+}
+
+.client-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.client-div:hover .client{
+  transform: scale(1.1);
+}
+
+.client{
+  width: 300px;
+  height: 350px;
+  transition: transform 0.4s; 
+  border-radius: 3px;
+}
+
+.reviews{
+  background-color: rgba(255, 255, 255, 0.747);
+  border-radius:6px;
+  border: none;
+  color: black;
+  padding: 15px;
+  width: 280px;
+  position: absolute;
+  bottom: -130px;
+}
+
+
+
+
+.others-title{
+  margin-top: 200px;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.others-container{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+
+.others-container-two{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.others-div{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.picc{
+  width: 470px;
+  height: 350px;
+  border-radius: 3px;
+  margin-left: 30px;
+}
+
+.others{
+  margin-left: 30px;
+  width: 470px;
+}
+
+
+
+/*FOOTER*/
+footer{
+  background-color: rgb(24, 49, 83);
+  margin-top: 20px;
+}
+
+.svg-div{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 250px;
+  align-items: center;
+  max-width: 400px;
+  border: 2px solid black;
+}
+
+.svg-icons{
+  width: 30px;
+  margin-right: 40px;
+  transition: transform 0.1s;
+  border-radius: 3px;
+}
+
+.svg-icons:hover{
+  transform: scale(1.2);
+}
+
+.book-a-reservation::after{
+  content: "Schedule a tour";
+  position: fixed;
+  color: white;
+  align-content:center;
+  background-color: orangered;
+  height: 40px;
+  width: 150px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  right: 10px;
+  bottom: 20px;
+  transition: all 0.4s;
+}
+
+.book-a-reservation{
+  content: "Schedule a tour";
+  position: fixed;
+  color: white;
+  align-content:center;
+  background-color: rgb(252, 94, 37);
+  height: 40px;
+  width: 150px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: none;
+  border-radius: 10px;
+  right: 10px;
+  bottom: 20px;
+  
+}
+
+.book-a-reservation:hover {
+  transform: scale(1.01);
+}
+
+footer p{
+  font-size: 20px;
+  color: white;
+  padding-left:200px ;
+}
+
+.bottom{
+  color: rgb(179, 174, 174);
+  font-size: 13px;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.footer-links a{
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-links a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
+.last-line{
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+

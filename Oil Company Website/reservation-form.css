@@ -1,0 +1,199 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  /* padding-right: 17px;  */
+  box-sizing: content-box;
+  box-sizing: border-box;
+  font-family: poppins, arial;
+  background-image: url(/images/building-7005414_1280.jpg);
+  background-size: cover;
+  background-position-y:-300px ;
+  background-color: rgba(56, 51, 51, 0.541);
+  background-blend-mode: darken;
+}
+
+
+/*FORM*/
+.title{
+  font-size:30px ;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+form{
+  border:1px solid white;
+  border-radius: 10px;
+  margin-left:300px ;
+  margin-right:300px ;
+  padding: 30px 10px 30px 20px;
+  background-color: rgba(128, 128, 128, 0.041);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter:blur(10px) ;
+}
+
+.header{
+  padding-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: rgb(6, 107, 238);
+  margin-top: 20px;
+}
+
+.drop-down{
+  width: 200px;
+  height: 40px;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 16px;
+  font-family: poppins,arial;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px;
+  color: black;
+}
+
+.full-name{
+  display: flex;
+  justify-content: start;  
+}
+
+.first-name{
+  width:300px ;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid white ;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+.last-name{
+  width:300px ;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid white ;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+.full-name p{
+  margin-top: 0;
+  font-size: 15px;
+  color: white;
+}
+
+.email{
+  width:300px ;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid white ;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+.phone-number{
+  width:300px ;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid white ;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+.date-time{
+  width:200px ;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid white ;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+
+.address{
+  color: white;
+}
+
+.first-flex{
+  display: flex;
+}
+
+.enter{
+  width:200px ;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid white ;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+  margin-top: 0;
+}
+
+.city{
+  width:200px ;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid white ;
+  background-color: transparent;
+  padding: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.state{
+  width:200px ;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid white ;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+.address p{
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.submit{
+  width: 200px;
+  height: 50px;
+  margin-left: 35%;
+  margin-right: 50%;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: blue;
+  font-family: poppins,arial;
+  font-size: 17px;
+  transition: transform 0.3s;
+}
+
+.submit:hover{
+  transform: scale(1.1);  
+}
+
+.submit:active{
+  opacity: 0.6;
+}

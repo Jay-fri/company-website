@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour booking Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      href="/images/WhatsApp Image 2024-07-25 at 23.06.10_b885a78a.jpg"
+    />
+    <link rel="stylesheet" href="/reservation-form.css" />
+  </head>
+  <body>
+    <p class="title">Tour Booking Form</p>
+    <form name="booking-form">
+      <p class="header" for="tour-code">Tour Code*</p>
+      <select class="drop-down" name="tour-code" id="tour-code" required>
+        <option value="TF-8">TF-8</option>
+        <option value="CF-6">CF-6</option>
+        <option value="WR-3">WR-3</option>
+        <option value="QU-7">QU-7</option>
+      </select>
+
+      <p class="header">Full Name*</p>
+      <div class="full-name">
+        <div>
+          <input class="first-name" name="first-name" type="text" required />
+          <p for="first-name">First-name</p>
+        </div>
+        <div>
+          <input class="last-name" name="last-name" type="text" required />
+          <p for="last-name">Last Name</p>
+        </div>
+      </div>
+
+      <p class="header">E-mail*</p>
+
+      <input
+        class="email"
+        type="email"
+        placeholder="ex:myname@example.com"
+        required
+      />
+
+      <p class="header">Phone Number</p>
+
+      <input
+        class="phone-number"
+        type="text"
+        placeholder="(000)000-0000"
+        required
+      />
+
+      <p class="header">Departure Date/time (approximately)*</p>
+
+      <input class="date-time" type="datetime-local" />
+
+      <p class="header">Return Date/Time (approximately)*</p>
+      <input class="date-time" type="datetime-local" required />
+
+      <p class="header">Pickup Address (Airport or Hotel)</p>
+
+      <div class="address">
+        <div>
+          <input class="enter" type="text" required />
+          <p>Street Address</p>
+        </div>
+
+        <div>
+          <input class="enter" type="text" required />
+          <p>Street Address Line 2</p>
+        </div>
+        <div class="first-flex">
+          <div>
+            <input class="city" type="text" required />
+            <p>City</p>
+          </div>
+
+          <div>
+            <input class="state" type="text" required />
+            <p>State / Province</p>
+          </div>
+        </div>
+        <div>
+          <input class="enter" type="text" required />
+          <p>Postal / Zip Code</p>
+          <input class="enter" type="text" required />
+        </div>
+      </div>
+      <button class="submit" for="booking-form">Submit Your Booking</button>
+    </form>
+  </body>
+</html>
